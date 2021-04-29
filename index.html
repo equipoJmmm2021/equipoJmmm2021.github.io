@@ -25,9 +25,7 @@
   }
 
   /* Create a Parallax Effect */
-  .bgimg-1,
-  .bgimg-2,
-  .bgimg-3 {
+  .bgimg-1 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,16 +45,31 @@
   .w3-hover-opacity {
     cursor: pointer;
   }
+  
+  .img-lily {
+    max-width: 22%;
+    padding-left: 40px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    
+    src = "logos/Lily1SinFondo.png";
+  }
 
   /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1600px) {
+ @media only screen and (max-device-width: 1600px) {
 
     .bgimg-1 {
       background-attachment: scroll;
       min-height: 400px;
       max-height: 1050px;
     }
+   
+   .img-lily {
+    max-width: 15%; 
+   }
+   
   }
+  
 </style>
 
 <body>  
@@ -71,7 +84,7 @@
 
   <!--Background-->
   <div class="bgimg-1 w3-container w3-opacity-min">
-    <img class="center" style="max-width: 22%; padding-left: 40px; padding-top: 150px; padding-bottom: 100px;" src="logos/Lily1SinFondo.png">
+    <img class="center img-lily">
   </div>
 
    <!--Banner-->
