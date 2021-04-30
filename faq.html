@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<title>Flamingos Urjc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="logos/Icon.png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+    .phone1 {
+        padding-top: 10px;
+    }
+
+    @media only screen and (max-device-width: 600px) {
+
+        .phone1 {
+            padding-top: 175px;
+        }
+    }
+
+    .centermusic {
+        float: right;
+    }
+
+    @media (max-width:827px) {
+        .centermusic {
+            display: block;
+            width: 100% !important
+        }
+    }
+
+</style>
+
+<body>
+    <div class="w3-top">
+
+        <!--Navbar-->
+        <div class="w3-bar w3-black">
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="members.html" class="w3-bar-item w3-button w3-mobile">Sobre nosotros</a>
+            <a href="kickstarter.html" class="w3-bar-item w3-button w3-mobile">Kickstarter</a>
+            <a href="faq.html" class="w3-bar-item w3-button w3-mobile">Preguntas frecuentes</a>
+            <audio src="loop.mp3" controls loop autoplay class="centermusic"></audio>
+        </div>
+
+        <!--Navbar2-->
+        <div class="w3-bar w3-grey">
+            <a href="#faq" class="w3-bar-item w3-button w3-mobile">Preguntas frecuentes</a>
+            <a href="#comments" class="w3-bar-item w3-button w3-mobile">Comentarios</a>
+        </div>
+
+    </div>
+
+    <div class="w3-white phone1" id="faq">
+
+        <div class="w3-container w3-content w3-center" style="padding-top: 130px;">
+            <img src="logos/faq.png" style="max-width: 60%; min-width: 300px;">
+        </div>
+
+        <!--QUESTIONS-->
+        <div class="w3-container w3-content">
+
+            <!--Question 1-->
+            <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white">
+                <p class="w3-left">
+                    Pregunta 1
+                </p>
+            </a>
+            <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-animate-top">
+                <h4> TEXTO 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum. </h1>
+            </div>
+            <!--Question 2-->
+            <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white">
+                <p class="w3-left">
+                    Pregunta 2
+                </p>
+            </a>
+            <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-animate-top">
+                <h4> TEXTO 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum. </h1>
+            </div>
+            <!--Question 3-->
+            <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white">
+                <p class="w3-left">
+                    Pregunta 3
+                </p>
+            </a>
+            <div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-animate-top">
+                <h4> TEXTO 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum. </h1>
+            </div>
+
+        </div>
+
+        <div class="w3-container w3-content" id="comments">
+
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-grey w3-padding-64 w3-opacity w3-hover-opacity-off">
+            <div class="w3-xlarge w3-section">
+                <a href="https://www.instagram.com/flamingoastudio/"><i
+                        class="fa fa-instagram w3-hover-opacity w3-padding-16"></i></a>
+                <a href="https://twitter.com/flamingoastudio"><i
+                        class="fa fa-twitter w3-hover-opacity w3-padding-16"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+</body>
+
+<script>
+
+    function myAccFunc() {
+        var x = document.getElementById("demoAcc");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    function myAccFunc2() {
+        var x = document.getElementById("demoAcc2");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    function myAccFunc3() {
+        var x = document.getElementById("demoAcc3");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
