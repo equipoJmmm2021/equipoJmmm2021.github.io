@@ -53,6 +53,17 @@
     padding-top: 150px;
     padding-bottom: 100px;
   }
+  
+      .centermusic {
+        float: right;
+    }
+
+    @media (max-width:827px) {
+        .centermusic {
+            display: block;
+            width: 100% !important
+        }
+    }
 
   /* Turn off parallax scrolling for tablets and phones */
  @media only screen and (max-device-width: 1600px) {
@@ -83,12 +94,13 @@
 <body>  
   
   <!--Navbar-->
-  <div class="w3-bar w3-black">
-    <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-    <a href="members.html" class="w3-bar-item w3-button w3-mobile">Sobre nosotros</a>
-    <a href="kickstarter.html" class="w3-bar-item w3-button w3-mobile">Kickstarter</a>
-    <audio src="loop.mp3" controls loop autoplay class="w3-right w3-mobile"></audio>
-  </div>
+          <div class="w3-bar w3-black">
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="members.html" class="w3-bar-item w3-button w3-mobile">Sobre nosotros</a>
+            <a href="kickstarter.html" class="w3-bar-item w3-button w3-mobile">Kickstarter</a>
+            <a href="faq.html" class="w3-bar-item w3-button w3-mobile">Preguntas frecuentes</a>
+            <audio src="loop.mp3" controls loop autoplay class="centermusic"></audio>
+        </div>
 
   <!--Background-->
   <div class="bgimg-1 w3-container w3-opacity-min">
