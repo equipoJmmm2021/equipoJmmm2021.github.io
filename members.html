@@ -7,6 +7,37 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<style>
+    .phone1 {
+        padding-top: 50px;
+    }
+
+    @media only screen and (max-device-width: 827px) {
+
+        .phone1 {
+            padding-top: 90px;
+        }
+    }
+
+    @media only screen and (max-device-width: 600px) {
+
+        .phone1 {
+            padding-top: 235px;
+        }
+    }
+
+    .centermusic {
+        float: right;
+    }
+
+    @media (max-width:827px) {
+        .centermusic {
+            display: block;
+            width: 100% !important
+        }
+    }
+</style>
+
 <body>
 
     <div class="w3-top">
@@ -16,7 +47,7 @@
             <a href="members.html" class="w3-bar-item w3-button w3-mobile">Sobre nosotros</a>
             <a href="kickstarter.html" class="w3-bar-item w3-button w3-mobile">Kickstarter</a>
             <a href="faq.html" class="w3-bar-item w3-button w3-mobile">Preguntas frecuentes</a>
-            <audio src="loop.mp3" controls loop autoplay class="papaya"></audio>
+            <audio src="loop.mp3" controls loop autoplay class="centermusic"></audio>
         </div>
 
         <!--Navbar2-->
@@ -26,7 +57,7 @@
         </div>
     </div>
 
-    <div class="w3-white" style="padding-top: 350px" id="members">
+    <div class="w3-white phone1" id="members">
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
             <div class="w3-panel w3-border-top w3-border-bottom">
                 <h2 class="w3-wide w3-center">Flamingos Studio</h2>
