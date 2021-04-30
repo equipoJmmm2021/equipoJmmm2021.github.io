@@ -7,28 +7,69 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<style>
+    .phone1 {
+        padding-top: 50px;
+    }
+
+    @media only screen and (max-device-width: 827px) {
+
+        .phone1 {
+            padding-top: 100px;
+        }
+    }
+
+    @media only screen and (max-device-width: 600px) {
+
+        .phone1 {
+            padding-top: 255px;
+        }
+    }
+
+    .centermusic {
+        float: right;
+    }
+
+    @media (max-width:827px) {
+        .centermusic {
+            display: block;
+            width: 100% !important
+        }
+    }
+</style>
+
 <body>
 
-    <!--Navbar-->
-    <div class="w3-bar w3-black">
+    <div class="w3-top">
+
+        <!--Navbar-->
+        <div class="w3-bar w3-black">
             <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
             <a href="members.html" class="w3-bar-item w3-button w3-mobile">Sobre nosotros</a>
             <a href="kickstarter.html" class="w3-bar-item w3-button w3-mobile">Kickstarter</a>
-            <audio src="loop.mp3" controls loop autoplay class="w3-right w3-mobile"></audio>
-          </div>
+            <a href="faq.html" class="w3-bar-item w3-button w3-mobile">Preguntas frecuentes</a>
+            <audio src="loop.mp3" controls loop autoplay class="centermusic"></audio>
+        </div>
+
+        <!--Navbar2-->
+        <div class="w3-bar w3-grey">
+            <a href="#kickstarter" class="w3-bar-item w3-button w3-mobile">Campaña de Kickstarter</a>
+            <a href="#merchan" class="w3-bar-item w3-button w3-mobile">Merchandising</a>
+        </div>
+
     </div>
 
-    <div class="w3-white">
+    <div class="w3-white phone1" id="kickstarter">
         <div class="w3-container w3-center">
             <img src="logos/kickstarter.png" class="w3-center w3-padding-64" style="width: 80%;">
         </div>
 
-    <!--First Row-->
+        <!--First Row-->
         <div class="w3-content w3-container">
 
 
             <div class="w3-container w3-padding-32">
-                    <!--Level 1-->
+                <!--Level 1-->
                 <div class="w3-padding-16 w3-container w3-third">
                     <div class="w3-container w3-center"
                         style="border-color:gray; border-width: 2px; border-style:double">
@@ -36,17 +77,19 @@
                         <div class="w3-center" style="padding-top: 20px; border-style: none">
                             <img src="niveles/Nivel1.png" alt="Avatar" style="width:100%;opacity:0.85">
                             <div class="w3-container">
-                                
-                                <p style="font-size: 11px;">Te agradecemos el apoyo por pequeño que sea. Te mantendremos informado de noticias exclusivas. ¡Muchas gracias por apoyar a estos humildes desarrolladores!<br/></p>
+
+                                <p style="font-size: 11px;">Te agradecemos el apoyo por pequeño que sea. Te mantendremos
+                                    informado de noticias exclusivas. ¡Muchas gracias por apoyar a estos humildes
+                                    desarrolladores!<br /></p>
 
                                 <div class="w3-panel w3-border-top w3-border-bottom">
                                     <h2 class="w3-opacity">1€</h2>
                                 </div>
                                 <div class="w3-panel">
-                                    <li style="font-size:13px">Noticias exclusivas.<br/><br/><br/><br/><br/></li>
+                                    <li style="font-size:13px">Noticias exclusivas.<br /><br /><br /><br /><br /></li>
                                 </div>
-                                <div class="w3-panel w3-border-bottom w3-border-top">
-                                    <h4>
+                                <div class="w3-panel w3-border-bottom w3-border-top w3-center">
+                                    <h4 class="w3-center">
                                         <button onclick="document.getElementById('payment').style.display='block'"
                                             class="w3-button w3-black">¡Compra ahora!
                                         </button>
@@ -58,7 +101,7 @@
                         <br>
                     </div>
                 </div>
-                    <!--Level 2-->
+                <!--Level 2-->
                 <div class="w3-padding-16 w3-container w3-third">
                     <div class="w3-container w3-center"
                         style="border-color:gray; border-width: 2px; border-style:double">
@@ -67,7 +110,9 @@
                             <img src="niveles/Nivel2.png" alt="Avatar" style="width:100%;opacity:0.85">
                             <div class="w3-container">
 
-                                <p style="font-size: 11px;">En este nivel obtendrás acceso de manera anticipada a la beta del juego. Además conseguirás un pack exclusivo de fondos de pantalla tanto para PC, colsolas y móviles.</p>
+                                <p style="font-size: 11px;">En este nivel obtendrás acceso de manera anticipada a la
+                                    beta del juego. Además conseguirás un pack exclusivo de fondos de pantalla tanto
+                                    para PC, colsolas y móviles.</p>
 
                                 <div class="w3-panel w3-border-top w3-border-bottom">
                                     <h2 class="w3-opacity">5€</h2>
@@ -90,7 +135,7 @@
                         <br>
                     </div>
                 </div>
-                 <!--Level 3-->
+                <!--Level 3-->
                 <div class="w3-padding-16 w3-container w3-third">
                     <div class="w3-container w3-center"
                         style="border-color:gray; border-width: 2px; border-style:double">
@@ -99,7 +144,8 @@
                             <img src="niveles/Nivel3.png" alt="Avatar" style="width:100%;opacity:0.85">
                             <div class="w3-container">
 
-                                <p style="font-size: 11px;">En este nivel se añaden pósters del juego junto con una clave del juego en la versión de salida en la plataforma elegida.<br/><br/></p>
+                                <p style="font-size: 11px;">En este nivel se añaden pósters del juego junto con una
+                                    clave del juego en la versión de salida en la plataforma elegida.<br /><br /></p>
 
                                 <div class="w3-panel w3-border-top w3-border-bottom">
                                     <h2 class="w3-opacity">15€</h2>
@@ -107,7 +153,8 @@
                                 <div class="w3-panel">
                                     <li style="font-size:13px">Clave del juego final.</li>
                                     <li style="font-size:13px">Pósters del juego.</li>
-                                    <li style="font-size:13px">Más todo lo incluido en los niveles anteriores.<br/><br/></li>
+                                    <li style="font-size:13px">Más todo lo incluido en los niveles
+                                        anteriores.<br /><br /></li>
                                 </div>
                                 <div class="w3-panel w3-border-bottom w3-border-top">
                                     <h4>
@@ -126,9 +173,9 @@
             </div>
 
 
-               <!--Row 2-->
+            <!--Row 2-->
             <div class="w3-container">
-                  <!--Level 4-->
+                <!--Level 4-->
                 <div class="w3-padding-16 w3-container w3-third">
                     <div class="w3-container w3-center"
                         style="border-color:gray; border-width: 2px; border-style:double">
@@ -136,8 +183,9 @@
                         <div class="w3-center" style="padding-top: 20px; border-style: none">
                             <img src="niveles/Nivel4.png" alt="Avatar" style="width:100%;opacity:0.85">
                             <div class="w3-container">
-                                
-                                <p style="font-size: 11px;">Se añaden a este nivel una camiseta con diseño exclusivo así como una copia digital de la banda sonora original del juego.<br/><br/></p>
+
+                                <p style="font-size: 11px;">Se añaden a este nivel una camiseta con diseño exclusivo así
+                                    como una copia digital de la banda sonora original del juego.<br /><br /></p>
 
                                 <div class="w3-panel w3-border-top w3-border-bottom">
                                     <h2 class="w3-opacity">30€</h2>
@@ -145,7 +193,8 @@
                                 <div class="w3-panel">
                                     <li style="font-size:13px">Camiseta exclusiva.</li>
                                     <li style="font-size:13px">BSO digital del juego.</li>
-                                    <li style="font-size:13px">Más todo lo incluido en los niveles anteriores.<br/><br/></li>
+                                    <li style="font-size:13px">Más todo lo incluido en los niveles
+                                        anteriores.<br /><br /></li>
                                 </div>
                                 <div class="w3-panel w3-border-bottom w3-border-top">
                                     <h4>
@@ -160,7 +209,7 @@
                         <br>
                     </div>
                 </div>
-                
+
                 <!--Level 5-->
                 <div class="w3-padding-16 w3-container w3-third">
                     <div class="w3-container w3-center"
@@ -170,7 +219,9 @@
                             <img src="niveles/Nivel5.png" alt="Avatar" style="width:100%;opacity:0.85">
                             <div class="w3-container">
 
-                                <p style="font-size: 11px;">En este nivel se incluye el libro de arte del juego más un video sobre el desarrollo de la historia del juego por parte del guionista.<br/><br/></p>
+                                <p style="font-size: 11px;">En este nivel se incluye el libro de arte del juego más un
+                                    video sobre el desarrollo de la historia del juego por parte del
+                                    guionista.<br /><br /></p>
 
                                 <div class="w3-panel w3-border-top w3-border-bottom">
                                     <h2 class="w3-opacity">50€</h2>
@@ -178,7 +229,8 @@
                                 <div class="w3-panel">
                                     <li style="font-size:13px">Libro de arte.</li>
                                     <li style="font-size:13px">Video sobre la historia.</li>
-                                    <li style="font-size:13px">Más todo lo incluido en los niveles anteriores.<br/><br/></li>
+                                    <li style="font-size:13px">Más todo lo incluido en los niveles
+                                        anteriores.<br /><br /></li>
                                 </div>
                                 <div class="w3-panel w3-border-bottom w3-border-top">
                                     <h4>
@@ -194,7 +246,7 @@
                     </div>
                 </div>
 
-                       <!--Level 6-->
+                <!--Level 6-->
                 <div class="w3-padding-16 w3-container w3-third">
                     <div class="w3-container w3-center"
                         style="border-color:gray; border-width: 2px; border-style:double">
@@ -203,7 +255,9 @@
                             <img src="niveles/NivelLily.png" alt="Avatar" style="width:100%;opacity:0.85">
                             <div class="w3-container">
 
-                                <p style="font-size: 11px;">En este último nivel se incluyen las recompensas más exclusivas: una figura de la protagonista del juego de 20cm y una caja musical con la melodía principal del juego.</p>
+                                <p style="font-size: 11px;">En este último nivel se incluyen las recompensas más
+                                    exclusivas: una figura de la protagonista del juego de 20cm y una caja musical con
+                                    la melodía principal del juego.</p>
 
                                 <div class="w3-panel w3-border-top w3-border-bottom">
                                     <h2 class="w3-opacity">+100€</h2>
@@ -229,13 +283,13 @@
                 </div>
 
             </div>
-            
-  
-        </div>
-        
-        
-        
 
+
+        </div>
+
+
+
+        <!--Description Kickstarter-->
         <div class="w3-content w3-container w3-padding-32">
             <h3 class="w3-center">ABOUT ME</h3>
             <p class="w3-center"><em>I love photography</em></p>
@@ -244,13 +298,15 @@
                 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna
                 aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in
                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat
                 non proident, sunt in culpa
                 qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut
                 aliquip
                 ex ea commodo consequat.</p>
         </div>
@@ -261,82 +317,82 @@
             </div><br>
         </div>
     </div>
-    
-    
-    <div class="w3-container w3-white">
-        
-                  <div class="w3-padding-16 w3-container w3-half">
-                    <div class="w3-container w3-center"
-                        style="border-color:gray; border-width: 2px; border-style:double">
 
-                        <div class="w3-center" style="padding-top: 20px; border-style: none">
-                            <img src="merchan/camisetabueno.jpg" alt="Avatar" style="width:100%;opacity:0.85">
-                            <div class="w3-container">
 
-                                <div class="w3-panel w3-border-top w3-border-bottom">
-                                    <h2 class="w3-wide w3-center">Camiseta Lily</h2>
-                                </div>
-                                <p style="font-size: 11px;">Descripción: Camiseta básica con cuello redondo, de manga corta y en 100% algodón.</p>
+    <div class="w3-container w3-white" id="merchan">
+        <!--Shirt_Lily-->
+        <div class="w3-padding-16 w3-container w3-half">
+            <div class="w3-container w3-center" style="border-color:gray; border-width: 2px; border-style:double">
 
-                                <div class="w3-panel w3-border-top w3-border-bottom">
-                                    <h2 class="w3-opacity">20€</h2>
-                                </div>
-                                <div class="w3-panel">
-                                        <li style="font-size:13px">Todas las tallas disponibles. Unisex.</li>
-                                        <li style="font-size:13px">Envío gratuito. Entrega de 7 a 21 días laborables.</li>
-                                </div>
-                                <div class="w3-panel w3-border-bottom w3-border-top">
-                                    <h4>
-                                        <button onclick="document.getElementById('payment').style.display='block'"
-                                            class="w3-button w3-black">¡Compra ahora!
-                                        </button>
-                                    </h4>
-                                </div>
+                <div class="w3-center" style="padding-top: 20px; border-style: none">
+                    <img src="merchan/camisetabueno.jpg" alt="Avatar" style="width:100%;opacity:0.85">
+                    <div class="w3-container">
 
-                            </div>
+                        <div class="w3-panel w3-border-top w3-border-bottom">
+                            <h2 class="w3-wide w3-center">Camiseta Lily</h2>
                         </div>
-                        <br>
+                        <p style="font-size: 11px;">Descripción: Camiseta básica con cuello redondo, de manga corta y en
+                            100% algodón.</p>
+
+                        <div class="w3-panel w3-border-top w3-border-bottom">
+                            <h2 class="w3-opacity">20€</h2>
+                        </div>
+                        <div class="w3-panel">
+                            <li style="font-size:13px">Todas las tallas disponibles. Unisex.</li>
+                            <li style="font-size:13px">Envío gratuito. Entrega de 7 a 21 días laborables.</li>
+                        </div>
+                        <div class="w3-panel w3-border-bottom w3-border-top">
+                            <h4>
+                                <button onclick="document.getElementById('payment').style.display='block'"
+                                    class="w3-button w3-black">¡Compra ahora!
+                                </button>
+                            </h4>
+                        </div>
+
                     </div>
                 </div>
-        
-                  <div class="w3-padding-16 w3-container w3-half">
-                    <div class="w3-container w3-center"
-                        style="border-color:gray; border-width: 2px; border-style:double">
+                <br>
+            </div>
+        </div>
+        <!--Shirt_bad-->
+        <div class="w3-padding-16 w3-container w3-half">
+            <div class="w3-container w3-center" style="border-color:gray; border-width: 2px; border-style:double">
 
-                        <div class="w3-center" style="padding-top: 20px; border-style: none">
-                            <img src="merchan/camisetamalo.jpg" alt="Avatar" style="width:100%;opacity:0.85">
-                            <div class="w3-container">
+                <div class="w3-center" style="padding-top: 20px; border-style: none">
+                    <img src="merchan/camisetamalo.jpg" alt="Avatar" style="width:100%;opacity:0.85">
+                    <div class="w3-container">
 
-                                <div class="w3-panel w3-border-top w3-border-bottom">
-                                    <h2 class="w3-wide w3-center">Camiseta Viejo Amigo</h2>
-                                </div>
-                                <p style="font-size: 11px;">Descripción: Camiseta básica con cuello redondo, de manga corta y en 100% algodón.</p>
-
-                                <div class="w3-panel w3-border-top w3-border-bottom">
-                                    <h2 class="w3-opacity">20€</h2>
-                                </div>
-                                <div class="w3-panel">
-                                    <li style="font-size:13px">Todas las tallas disponibles. Unisex.</li>
-                                    <li style="font-size:13px">Envío gratuito. Entrega de 7 a 21 días laborables.</li>
-                                </div>
-                                <div class="w3-panel w3-border-bottom w3-border-top">
-                                    <h4>
-                                        <button onclick="document.getElementById('payment').style.display='block'"
-                                            class="w3-button w3-black">¡Compra ahora!
-                                        </button>
-                                    </h4>
-                                </div>
-
-                            </div>
+                        <div class="w3-panel w3-border-top w3-border-bottom">
+                            <h2 class="w3-wide w3-center">Camiseta Viejo Amigo</h2>
                         </div>
-                        <br>
+                        <p style="font-size: 11px;">Descripción: Camiseta básica con cuello redondo, de manga corta y en
+                            100% algodón.</p>
+
+                        <div class="w3-panel w3-border-top w3-border-bottom">
+                            <h2 class="w3-opacity">20€</h2>
+                        </div>
+                        <div class="w3-panel">
+                            <li style="font-size:13px">Todas las tallas disponibles. Unisex.</li>
+                            <li style="font-size:13px">Envío gratuito. Entrega de 7 a 21 días laborables.</li>
+                        </div>
+                        <div class="w3-panel w3-border-bottom w3-border-top">
+                            <h4>
+                                <button onclick="document.getElementById('payment').style.display='block'"
+                                    class="w3-button w3-black">¡Compra ahora!
+                                </button>
+                            </h4>
+                        </div>
+
                     </div>
                 </div>
-        
+                <br>
+            </div>
+        </div>
+
     </div>
 
-    
-    
+
+
     <div id="payment" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom">
             <div class="w3-container w3-black">
@@ -352,7 +408,8 @@
                     <div class="w3-row w3-center w3-card w3-padding">
                         <div class="w3-container w3-half s6">
                             <a href="javascript:void(0)" onclick="openMenu(event, 'Paypal');" id="myLink">
-                                <div class="w3-col tablink"><img src="pay/Paypal.png" style="width: 100px; height: 100px;">
+                                <div class="w3-col tablink"><img src="pay/Paypal.png"
+                                        style="width: 100px; height: 100px;">
                                 </div>
                             </a>
                         </div>
@@ -366,11 +423,11 @@
                     </div>
 
                     <div id="Paypal" class="w3-container menu w3-padding-48 w3-card w3-center">
-                        <img src = "disclaimers/disclaimer2.png" class= "w3-center" style="max-width: 75%;">
+                        <img src="disclaimers/disclaimer2.png" class="w3-center" style="max-width: 75%;">
                     </div>
 
                     <div id="Credit_card" class="w3-container menu w3-padding-48 w3-card w3-center">
-                           <img src = "disclaimers/disclaimer2.png" class= "w3-center" style="max-width: 75%;">
+                        <img src="disclaimers/disclaimer2.png" class="w3-center" style="max-width: 75%;">
                     </div>
                 </div>
             </div>
@@ -383,8 +440,10 @@
     <!-- Footer -->
     <footer class="w3-center w3-grey w3-padding-64 w3-opacity w3-hover-opacity-off">
         <div class="w3-xlarge w3-section">
-            <a href = "https://www.instagram.com/flamingoastudio/"><i class="fa fa-instagram w3-hover-opacity w3-padding-16"></i></a>
-            <a href = "https://twitter.com/flamingoastudio"><i class="fa fa-twitter w3-hover-opacity w3-padding-16"></i></a>
+            <a href="https://www.instagram.com/flamingoastudio/"><i
+                    class="fa fa-instagram w3-hover-opacity w3-padding-16"></i></a>
+            <a href="https://twitter.com/flamingoastudio"><i
+                    class="fa fa-twitter w3-hover-opacity w3-padding-16"></i></a>
         </div>
     </footer>
 
