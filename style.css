@@ -1,3 +1,38 @@
+/*Fuente de Alexvar*/
+@font-face {
+    font-family: Alexfont;
+    src: url(Alexfont-Final.ttf);
+}
+
+h1{
+    font-family: Alexfont;
+    font-size: 200%;
+}
+h2{
+    font-family: Alexfont;
+    font-size: 200%;
+}
+h3{
+    font-family: Alexfont;
+    font-size: 200%;
+}
+h4{
+    font-family: Alexfont;
+    font-size: 200%;
+}
+h5{
+    font-family: Alexfont;
+    font-size: 200%;
+}
+h6{
+    font-family: Alexfont;
+    font-size: 200%;
+}
+body {
+    font-family:Alexfont;
+    font-size: 200%;
+}
+
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
@@ -280,39 +315,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-/*Fuente de Alexvar*/
-@font-face {
-    font-family: Alexfont;
-    src: url(Alexfont-Final.ttf);
-}
-
-h1{
-    font-family: Alexfont;
-    font-size: 200%;
-}
-h2{
-    font-family: Alexfont;
-    font-size: 200%;
-}
-h3{
-    font-family: Alexfont;
-    font-size: 200%;
-}
-h4{
-    font-family: Alexfont;
-    font-size: 200%;
-}
-h5{
-    font-family: Alexfont;
-    font-size: 200%;
-}
-h6{
-    font-family: Alexfont;
-    font-size: 200%;
-}
-body {
-    font-family:Alexfont;
-    font-size: 200%;
 }
