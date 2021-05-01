@@ -9,7 +9,7 @@ Amplitude.init({
             "name": "Lily Principal Theme",
             "artist": "Flamingo Studios",
             "album": "Lily",
-            "url": "file:///D:/Multimedia/test/single-song-player/dist/js/loop.mp3",
+            "url": "https://github.com/equipoJmmm2021/equipoJmmm2021.github.io/blob/main/js/loop.mp3",
             "cover_art_url": "file:///D:/Multimedia/background.png"
         }
     ]
