@@ -1,7 +1,25 @@
 @font-face {
     font-family: Alexfont;
-    src: Alexfont-Final.ttf;
-    src: url(http://geocities.ws/alexvar/Alexfont-Final.ttf");
+    src: url(Alexfont-Final.ttf);
+}
+
+h1{
+    font-family: Alexfont;
+}
+h2{
+    font-family: Alexfont;
+}
+h3{
+    font-family: Alexfont;
+}
+h4{
+    font-family: Alexfont;
+}
+h5{
+    font-family: Alexfont;
+}
+h6{
+    font-family: Alexfont;
 }
 
 
