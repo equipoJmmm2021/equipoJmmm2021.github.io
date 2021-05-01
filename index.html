@@ -49,16 +49,6 @@
       padding-bottom: 100px;
     }
 
-    .centermusic {
-      float: right;
-    }
-
-    @media (max-width:827px) {
-      .centermusic {
-        display: block;
-        width: 100% !important
-      }
-    }
 
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1600px) {
@@ -88,7 +78,7 @@
     @media only screen and (max-device-width: 600px) {
 
       .phone1 {
-        padding-top: 135px;
+        padding-top: 35px;
       }
     }
   </style>
@@ -101,7 +91,6 @@
       <a href="members.html" class="w3-bar-item w3-button w3-mobile">Sobre nosotros</a>
       <a href="kickstarter.html" class="w3-bar-item w3-button w3-mobile">Kickstarter</a>
       <a href="faq.html" class="w3-bar-item w3-button w3-mobile">Preguntas frecuentes</a>
-      <audio src="loop.mp3" controls loop autoplay class="centermusic"></audio>
     </div>
 
     <!--Background-->
@@ -110,8 +99,10 @@
     </div>
 
     <!--Banner-->
-    <div class="w3-center w3-padding-64">
-      <img src="disclaimers/disclaimer1.png" class="w3-center w3-image">
+    <div class="w3-content w3-container w3-center">
+      <div class="place-items-center w3-padding-64">
+        <img src="disclaimers/disclaimer1.png" class="w3-center w3-image">
+      </div>
     </div>
 
     <!--Intro-->
@@ -268,7 +259,7 @@
 
       <div class="w3-row-padding w3-center">
 
-        <div class="w3-col m4 w3-padding-16">
+        <div class="w3-col m4 w3-padding-16" style="padding-bottom: 60px;">
           <!--Steam-->
           <a href="https://store.steampowered.com/"><img src="plataforms/steam.png" style="width:100%; max-width:150px"
               class="w3-opacity w3-hover-opacity-off"></a>
@@ -288,40 +279,47 @@
 
       </div>
 
-    </div>
 
 
-    <!-- PRUEBA -->
 
-    <div class="w-screen h-screen flex items-center justify-center">
+      <!-- PRUEBA -->
 
-      <div id="single-song-player" class="shadow flex flex-col rounded max-w-sm mx-auto">
-        <img class="w-full rounded-t-lg" data-amplitude-song-info="cover_art_url" />
-        <progress id="song-played-progress"
-          class="amplitude-song-played-progress bg-progress-background appearance-none w-full h-1 block cursor-pointer border-0 "></progress>
 
-        <div class="w-full flex flex-col bg-bottom-container rounded-b-lg">
-          <div class="w-full flex items-center justify-between pt-1 px-3">
-            <span class="font-sans opacity-50 text-xs text-white">
-              <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
-            </span>
-            <span class="font-sans opacity-50 text-xs text-white">
-              <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
-            </span>
-          </div>
-          <div class="w-full flex items-center justify-between mt-3 px-3 pb-3">
-            <div class="amplitude-play-pause w-20 h-20 cursor-pointer"></div>
-            <div class="flex flex-col">
-              <span data-amplitude-song-info="name" class="text-center text-lg text-white block font-sans"></span>
-              <span data-amplitude-song-info="artist" class="text-center text-sm text-white block font-sans"></span>
+      <div class="w3-content w3-padding-64">
+        <div class="w3-panel w3-border-top w3-border-bottom">
+          <h3 class="w3-center">Música principal</h3>
+        </div>
+
+        <div class="w3-center">
+
+          <div id="single-song-player" class="shadow flex flex-col rounded max-w-sm mx-auto">
+            <img class="w-full rounded-t-lg" data-amplitude-song-info="cover_art_url" />
+            <progress id="song-played-progress"
+              class="amplitude-song-played-progress bg-progress-background appearance-none w-full h-1 block cursor-pointer border-0 "></progress>
+
+            <div class="w-full flex flex-col bg-bottom-container rounded-b-lg">
+              <div class="w-full flex items-center justify-between pt-1 px-3">
+                <span class="font-sans opacity-50 text-xs text-white">
+                  <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
+                </span>
+                <span class="font-sans opacity-50 text-xs text-white">
+                  <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+                </span>
+              </div>
+              <div class="w-full flex items-center justify-between mt-3 px-3 pb-3">
+                <div class="amplitude-play-pause w-20 h-20 cursor-pointer"></div>
+                <div class="flex flex-col">
+                  <span data-amplitude-song-info="name" class="text-center text-lg text-white block font-sans"></span>
+                  <span data-amplitude-song-info="artist" class="text-center text-sm text-white block font-sans"></span>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
 
     </div>
-
-
 
 
 
