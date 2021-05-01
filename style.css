@@ -1,5 +1,6 @@
 @font-face {
-    font-family: Alexfont;
+    font-family: "Alexfont";
+    src: url(http://geocities.ws/alexvar/Alexfont-Final.ttf");
     src: url("Alexfont-Final.ttf");
 }
 
