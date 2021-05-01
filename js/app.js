@@ -10,7 +10,7 @@ Amplitude.init({
             "artist": "Flamingo Studios",
             "album": "Lily",
             "url": "https://github.com/equipoJmmm2021/equipoJmmm2021.github.io/blob/main/js/loop.mp3",
-            "cover_art_url": "https://github.com/equipoJmmm2021/equipoJmmm2021.github.io/blob/main/logos/album.jpg"
+            "cover_art_url": "https://raw.githubusercontent.com/equipoJmmm2021/equipoJmmm2021.github.io/main/logos/album.jpg"
         }
     ]
 });
