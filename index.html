@@ -279,6 +279,43 @@
 
   </div>
 
+  <!-- Prueba -->
+  
+  
+      <div class="w-screen h-screen flex items-center justify-center">
+
+        <div id="single-song-player" class="shadow flex flex-col rounded max-w-sm mx-auto">
+            <img class="w-full rounded-t-lg" data-amplitude-song-info="cover_art_url" />
+            <progress id="song-played-progress"
+                class="amplitude-song-played-progress bg-progress-background appearance-none w-full h-1 block cursor-pointer border-0 "></progress>
+
+            <div class="w-full flex flex-col bg-bottom-container rounded-b-lg">
+                <div class="w-full flex items-center justify-between pt-1 px-3">
+                    <span class="font-sans opacity-50 text-xs text-white">
+                        <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
+                    </span>
+                    <span class="font-sans opacity-50 text-xs text-white">
+                        <span class="amplitude-duration-minutes"></span>:<span
+                            class="amplitude-duration-seconds"></span>
+                    </span>
+                </div>
+                <div class="w-full flex items-center justify-between mt-3 px-3 pb-3">
+                    <div class="amplitude-play-pause w-20 h-20 cursor-pointer"></div>
+                    <div class="w3-container">
+                        <span data-amplitude-song-info="name"
+                            class="text-center text-lg text-white block font-sans" style= "padding-right: 60px;"></span>
+                        <span data-amplitude-song-info="artist"
+                            class="text-center text-sm text-white block font-sans" style= "padding-right: 60px;"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+  
+  
+  
   <!-- Footer -->
   <footer class="w3-center w3-grey w3-padding-64 w3-opacity w3-hover-opacity-off">
     <div class="w3-xlarge w3-section">
@@ -314,4 +351,6 @@
 
 </script>
 
+ <script type="text/javascript" src=".js/app.js"></script>
+  
 </html>
