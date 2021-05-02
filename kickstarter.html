@@ -466,6 +466,17 @@
             evt.currentTarget.firstElementChild.className += " w3-dark-grey";
         }
         document.getElementById("myLink").click();
+        
+        
+     function myFunction() {
+    var x = document.getElementById("testing");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+        
     </script>
 
 </body>
