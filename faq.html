@@ -37,12 +37,30 @@
         </div>
 
         <!--Navbar2-->
-        <div class="w3-bar w3-colorlily2">
-            <b>
-            <a href="#faq" class="w3-bar-item w3-button w3-mobile">Preguntas frecuentes</a>
-            <a href="#comments" class="w3-bar-item w3-button w3-mobile">Comentarios</a>
-            </b>
-        </div>
+    <div class="w3-bar w3-colorlily" id="hide">
+      <b>
+
+        <a href="#campaign" class="w3-bar-item w3-button w3-hide-small">Presentación</a>
+        <a href="#characters" class="w3-bar-item w3-button w3-hide-small">Personajes</a>
+        <a href="#music" class="w3-bar-item w3-button w3-hide-small">Música</a>
+        <a href="#plataforms" class="w3-bar-item w3-button w3-hide-small">Plataformas</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="myFunction()">&#9776;</a>
+
+      </b>
+    </div>
+
+    <div class="w3-bar-block w3-colorlily w3-hide w3-hide-large w3-hide-medium" id="testing">
+      <b>
+
+        <a href="#campaign" class="w3-bar-item w3-button">Presentación</a>
+        <a href="#characters" class="w3-bar-item w3-button">Personajes</a>
+        <a href="#music" class="w3-bar-item w3-button">Música</a>
+        <a href="#plataforms" class="w3-bar-item w3-button">Plataformas</a>
+
+      </b>
+    </div>
+
 
     </div>
 
@@ -193,4 +211,14 @@
             x.className = x.className.replace(" w3-show", "");
         }
     }
+    
+        function myFunction() {
+        var x = document.getElementById("testing");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+            
+  }
 </script>
