@@ -284,12 +284,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /*Fuente de Alexvar*/
 @font-face {
-    font-family: Alexfont !important;
+    font-family: Alexfont;
     src: url(Alexfont.ttf);
-    src: url(http://geocities.ws/alexvar/Alexfont-Final.ttf);
 }
 
 h1, h2, h3, h4, h5, h6, body{
-    font-family: Alexfont !important;
+    font-family: Alexfont;
     font-size: 150%;
 }
