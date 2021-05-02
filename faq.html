@@ -83,30 +83,30 @@
                 <h4>Español, Japonés, Rumano, Andaluz, Gallego,        </h4>
             </div>            
             <!--Question 4-->
-            <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white">
+            <a onclick="myAccFunc4()" href="javascript:void(0)" class="w3-button w3-block w3-white">
                 <p class="w3-left">
                     ¿Se sacará más merchandising?
                 </p>
             </a>
-            <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-animate-top">
+            <div id="demoAcc4" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-animate-top">
                 <h4>        </h4>
             </div>
             <!--Question 5-->
-            <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-button w3-block w3-white">
+            <a onclick="myAccFunc5()" href="javascript:void(0)" class="w3-button w3-block w3-white">
                 <p class="w3-left">
                     ¿Puedo comprar las recompensas del kickstarter por separado?
                 </p>
             </a>
-            <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-animate-top">
+            <div id="demoAcc5" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-animate-top">
                 <h4>        </h4>
             </div>
             <!--Question 6-->
-            <a onclick="myAccFunc3()" href="javascript:void(0)" class="w3-button w3-block w3-white">
+            <a onclick="myAccFunc6()" href="javascript:void(0)" class="w3-button w3-block w3-white">
                 <p class="w3-left">
                     ¿A qué países se envían las recompensas del kickstarter?
                 </p>
             </a>
-            <div id="demoAcc3" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-animate-top">
+            <div id="demoAcc6" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-animate-top">
                 <h4>        </h4>
             </div>
             
@@ -157,6 +157,33 @@
     }
 
     function myAccFunc3() {
+        var x = document.getElementById("demoAcc3");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    
+        function myAccFunc4() {
+        var x = document.getElementById("demoAcc3");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    
+        function myAccFunc5() {
+        var x = document.getElementById("demoAcc3");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    
+        function myAccFunc6() {
         var x = document.getElementById("demoAcc3");
         if (x.className.indexOf("w3-show") == -1) {
             x.className += " w3-show";
