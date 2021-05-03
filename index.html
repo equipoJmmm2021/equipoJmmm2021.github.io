@@ -186,10 +186,10 @@
     </div>
 
   </div>
-  <!--Trailers-->
-  <h2 class="w3-center">Galería</h2>
-  <div class="w3-content w3-container w3-padding-64">
+  <!--Galería-->
 
+ <div class="w3-content w3-container w3-padding-64">
+  <h2 class="w3-center">Galería</h2>
     <div class="w3-content w3-display-container">
       <div class="w3-display-container mySlides w3-animate-opacity">
         <img src="Slide/slide1.jpg" style="width:100%">
@@ -217,14 +217,11 @@
 
       <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
       <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-
-      <div id="characters"></div>
-
-
     </div>
   </div>
 
   <!--Personajes-->
+  <div class= "w3-container w3-padding-64" id= "characters">
   <div class="w3-panel w3-border-top w3-border-bottom">
     <h3 class="w3-center">Personajes</h3>
   </div>
@@ -249,9 +246,9 @@
 
   </div>
 
-  <!-- Text2 -->
-  <div class="w3-row w3-content w3-container w3-padding-64">
 
+  <div class="w3-row w3-content w3-container w3-padding-64">
+  <!-- Text2 -->
     <div class="w3-col l6 w3-padding-large">
       <h1 class="w3-center">Viejo amigo</h1>
       <p class="w3-text-grey w3-center">Extraño personaje que, a pesar de su apariencia, siempre ha sido un viejo amigo.</p>
@@ -265,6 +262,42 @@
 
   </div>
 
+  
+    <!--Galería-->
+
+ <div class="w3-content w3-container w3-padding-64">
+  <h2 class="w3-center">Galería</h2>
+    <div class="w3-content w3-display-container">
+      <div class="w3-display-container mySlides w3-animate-opacity">
+        <img src="Slide/slide1.jpg" style="width:100%">
+
+      </div>
+
+      <div class="w3-display-container mySlides w3-animate-opacity">
+        <img src="Slide/slide2.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-display-container mySlides w3-animate-opacity">
+        <img src="Slide/slide3.jpg" style="width:100%">
+
+      </div>
+
+      <div class="w3-display-container mySlides w3-animate-opacity">
+        <img src="Slide/slide4.jpg" style="width:100%">
+
+      </div>
+
+      <div class="w3-display-container mySlides w3-animate-opacity">
+        <img src="Slide/slide5.jpg" style="width:100%">
+
+      </div>
+
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </div>
+  </div> 
+  
 
   <div class="w3-content w3-container w3-padding-64 w3-white" id="music">
 
@@ -390,6 +423,17 @@
   function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+  
+    function showDivs2(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
     if (n > x.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = x.length }
     for (i = 0; i < x.length; i++) {
