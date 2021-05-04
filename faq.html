@@ -127,8 +127,13 @@
             
         </div>
 
-        <div class="w3-container w3-content" id="comments">
 
+        <div class="w3-container w3-content w3-padding-64" id="comments">
+            
+            <div class="w3-panel w3-border-top w3-border-bottom">
+                <h2 class="w3-wide w3-center">Comentarios</h2>
+            </div>
+            <div id="disqus_thread"></div>
 
         </div>
 
@@ -215,6 +220,22 @@
         } else {
             x.className = x.className.replace(" w3-show", "");
         }
-            
-  }
+    }   
+
+    var disqus_config = function () {
+    this.page.url = "https://equipojmmm2021.github.io/faq.html";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "lily-15"; 
+    };
+    
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lily-15.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+
+
 </script>
+<script id="dsq-count-scr" src="//lily-15.disqus.com/count.js" async></script>
+
+<noscript><a href="https://disqus.com/?ref_noscript"></a></noscript>
